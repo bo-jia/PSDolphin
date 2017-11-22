@@ -23,4 +23,6 @@
  */
 extern void PSDAdjustBrightnessAndContrast(unsigned char* data, int w, int h, float brightness = 0, float contrast = 0);
 
+extern void PSDAutoTone(unsigned char* data, int w, int h, float percentage = 0.01);
+
 #endif /* DColor_hpp */
