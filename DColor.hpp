@@ -23,6 +23,17 @@
  */
 extern void PSDAdjustBrightnessAndContrast(unsigned char* data, int w, int h, float brightness = 0, float contrast = 0);
 
+
+/**
+ Auto tone
+
+ @param data image RGB data
+ @param w width of image
+ @param h height of image
+ @param percentage default value is 0.01
+ */
 extern void PSDAutoTone(unsigned char* data, int w, int h, float percentage = 0.01);
+
+extern void PSDAutomaticWhiteBalance(unsigned char* data, int w, int h);
 
 #endif /* DColor_hpp */
